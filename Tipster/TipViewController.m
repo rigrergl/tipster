@@ -9,6 +9,11 @@
 
 @interface TipViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *billField;
+@property (weak, nonatomic) IBOutlet UILabel *tipLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
+
 @end
 
 @implementation TipViewController
@@ -22,6 +27,20 @@
     NSLog(@"hello");
     
     [self.view endEditing:true];
+}
+
+- (IBAction)updateLabels:(id)sender {
+    double tipPercentages[] = {0.15, 0.2, 0.25};
+    double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
+    
+    double bill = [self.billField.text doubleValue];
+    double tip = bill * tipPercentage;
+    double total = bill + tip;
+    
+    
+    
+    self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", total];
 }
 
 /*
