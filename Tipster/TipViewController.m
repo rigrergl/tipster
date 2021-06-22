@@ -9,7 +9,7 @@
 
 @interface TipViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *billField;
+@property (weak, nonatomic) IBOutlet UITextField *billAmountField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
@@ -33,7 +33,7 @@
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     
-    double bill = [self.billField.text doubleValue];
+    double bill = [self.billAmountField.text doubleValue];
     double tip = bill * tipPercentage;
     double total = bill + tip;
     

@@ -87,7 +87,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tipster" id="bjg-sD-sHd"/>
                     <connections>
-                        <outlet property="billField" destination="yCH-T1-RLw" id="tP4-t5-KJN"/>
+                        <outlet property="billAmountField" destination="yCH-T1-RLw" id="jWb-JK-HsI"/>
                         <outlet property="tipLabel" destination="VnI-hW-fdN" id="XZu-W8-8Ub"/>
                         <outlet property="tipPercentageControl" destination="CaR-Uc-9q2" id="imM-Xu-iRd"/>
                         <outlet property="totalLabel" destination="GLk-RS-ppF" id="8iY-uD-ZCp"/>
