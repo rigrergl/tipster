@@ -23,6 +23,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    CGRect billFrame = self.billAmountField.frame;
+    billFrame.origin.y += 200;
+    self.billAmountField.frame = billFrame;
+    
+    CGRect labelsFrame = self.labelsContainerView.frame;
+    labelsFrame.origin.y += 200;
+    self.labelsContainerView.frame = labelsFrame;
+    
+    self.labelsContainerView.alpha = 0;
+    
+    self.areLabelsHidden = true;
 }
 
 - (IBAction)onTap:(id)sender {
