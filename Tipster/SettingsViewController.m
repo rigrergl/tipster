@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSInteger defaultPercentageIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"selectedPercentageIndex"];
+    self.defaultSelection.selectedSegmentIndex = defaultPercentageIndex;
 }
 
 - (IBAction)setDefaultPercentage:(id)sender {
@@ -25,8 +28,14 @@
     
 //    NSLog(@"%f", tipPercentage);
     
-    NSNumber *defaultPercentageIndex = [NSNumber numberWithInt:self.defaultSelection.selectedSegmentIndex];
-    [[NSUserDefaults standardUserDefaults] setObject: defaultPercentageIndex forKey:@"selectedPercentageIndex"];
+//    NSInteger  testIndex = 1;
+//    [[NSUserDefaults standardUserDefaults] setInteger: testIndex forKey:@"selectedPercentageIndex"];
+//
+//    NSInteger defaultPercentageIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"selectedPercentageIndex"];
+    
+    NSInteger defaultPercentageIndex = self.defaultSelection.selectedSegmentIndex;
+    
+    [[NSUserDefaults standardUserDefaults] setInteger: defaultPercentageIndex forKey:@"selectedPercentageIndex"];
     
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }

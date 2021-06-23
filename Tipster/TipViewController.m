@@ -41,6 +41,11 @@
     self.billAmountField.placeholder = @"$";
     
     [self.billAmountField becomeFirstResponder];
+    
+    
+    //Defaults
+    NSInteger defaultPercentageIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"selectedPercentageIndex"];
+    self.tipPercentageControl.selectedSegmentIndex = defaultPercentageIndex;
 }
 
 - (IBAction)onTap:(id)sender {
