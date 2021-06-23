@@ -20,10 +20,15 @@
 }
 
 - (IBAction)setDefaultPercentage:(id)sender {
-    double tipPercentages[] = {0.15, 0.2, 0.25};
-    double tipPercentage = tipPercentages[self.defaultSelection.selectedSegmentIndex];
+//    double tipPercentages[] = {0.15, 0.2, 0.25};
+//    double tipPercentage = tipPercentages[self.defaultSelection.selectedSegmentIndex];
     
-    NSLog(@"%f", tipPercentage);
+//    NSLog(@"%f", tipPercentage);
+    
+    NSNumber *defaultPercentageIndex = [NSNumber numberWithInt:self.defaultSelection.selectedSegmentIndex];
+    [[NSUserDefaults standardUserDefaults] setObject: defaultPercentageIndex forKey:@"selectedPercentageIndex"];
+    
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }
 
 
