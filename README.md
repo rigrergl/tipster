@@ -1,6 +1,6 @@
 Submitted by: **Rigre Reinier Garciandia Larquin**
 
-Time spent: **4** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
@@ -30,7 +30,10 @@ GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Challenges:
+ - Learning how to use xcode and objective-c
+ - Using NSUserDefaults for storing default tip percentage
+ - Figuring out how to move to a new page
 
 ## Credits
 
