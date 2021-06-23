@@ -18,6 +18,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (void) setDefaultPercentage {
+    
+}
+
 /*
 #pragma mark - Navigation
 
