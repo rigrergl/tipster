@@ -37,6 +37,8 @@
     self.areLabelsHidden = true;
     
     self.billAmountField.placeholder = @"$";
+    
+    [self.billAmountField becomeFirstResponder];
 }
 
 - (IBAction)onTap:(id)sender {
