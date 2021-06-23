@@ -35,6 +35,8 @@
     self.labelsContainerView.alpha = 0;
     
     self.areLabelsHidden = true;
+    
+    self.billAmountField.placeholder = @"$";
 }
 
 - (IBAction)onTap:(id)sender {
