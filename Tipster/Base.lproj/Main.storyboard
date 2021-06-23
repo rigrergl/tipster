@@ -80,7 +80,20 @@
                             <outletCollection property="gestureRecognizers" destination="GET-VP-BVD" appends="YES" id="FjK-PV-vT2"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tipster" id="bjg-sD-sHd"/>
+                    <navigationItem key="navigationItem" title="Tipster" id="bjg-sD-sHd">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="vA3-Km-hdU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="x1x-bJ-ZZu">
+                                <rect key="frame" x="288" y="7" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="gK8-4X-Fq1" kind="popoverPresentation" popoverAnchorView="x1x-bJ-ZZu" id="ZtX-i4-EMR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billAmountField" destination="yCH-T1-RLw" id="jWb-JK-HsI"/>
                         <outlet property="labelsContainerView" destination="tPg-sh-htf" id="emC-Si-xS2"/>
@@ -97,6 +110,21 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="969.23076923076917" y="117.29857819905213"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zh2-Nu-zBd">
+            <objects>
+                <viewController id="gK8-4X-Fq1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVj-0J-dw2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xL1-xx-Oi1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tM-yc-tUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R25-oQ-k12">
@@ -116,6 +144,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

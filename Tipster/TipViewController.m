@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
 @property (weak, nonatomic) IBOutlet UIView *labelsContainerView;
+
+
 @property Boolean areLabelsHidden;
 
 @end
@@ -98,6 +100,7 @@
         self.labelsContainerView.alpha = 1;
     }];
 }
+
 
 /*
 #pragma mark - Navigation

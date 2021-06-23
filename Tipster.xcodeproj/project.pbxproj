@@ -16,6 +16,7 @@
 		3B4DF24626827F7100AE2B6B /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DF24526827F7100AE2B6B /* TipsterTests.m */; };
 		3B4DF25126827F7100AE2B6B /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DF25026827F7100AE2B6B /* TipsterUITests.m */; };
 		3B4DF26026828DFB00AE2B6B /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DF25F26828DFB00AE2B6B /* TipViewController.m */; };
+		3BCFE8CB2682D08400044405 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCFE8CA2682D08400044405 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		3B4DF25226827F7100AE2B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4DF25E26828DFB00AE2B6B /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		3B4DF25F26828DFB00AE2B6B /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		3BCFE8C92682D08400044405 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3BCFE8CA2682D08400044405 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				3B4DF23726827F7000AE2B6B /* LaunchScreen.storyboard */,
 				3B4DF23A26827F7000AE2B6B /* Info.plist */,
 				3B4DF23B26827F7000AE2B6B /* main.m */,
+				3BCFE8C92682D08400044405 /* SettingsViewController.h */,
+				3BCFE8CA2682D08400044405 /* SettingsViewController.m */,
 			);
 			path = Tipster;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			files = (
 				3B4DF22B26827F6F00AE2B6B /* AppDelegate.m in Sources */,
 				3B4DF23C26827F7000AE2B6B /* main.m in Sources */,
+				3BCFE8CB2682D08400044405 /* SettingsViewController.m in Sources */,
 				3B4DF26026828DFB00AE2B6B /* TipViewController.m in Sources */,
 				3B4DF22E26827F6F00AE2B6B /* SceneDelegate.m in Sources */,
 			);
